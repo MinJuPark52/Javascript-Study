@@ -1,4 +1,4 @@
-function calculate(command, a, b) {
+const calculate = (command, a, b) => {
   switch (command) {
     case "add":
       return a + b;
@@ -11,4 +11,4 @@ function calculate(command, a, b) {
     default:
       throw Error(`Unknown command: ${command}`);
   }
-}
+};
