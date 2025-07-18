@@ -1,4 +1,4 @@
-/* 콜백 지옥 */
+/* 프로미스 활용한 콜백 지옥 */
 class USerStorage {
   loginUser(id, password) {
     return new Promise((resolve, reject) => {
