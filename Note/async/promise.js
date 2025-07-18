@@ -10,8 +10,8 @@ const promise = new Promise((resolve, reject) => {
   // (network, read files...) 비동기로 처리
   console.log("doing something");
   setTimeout(() => {
-    // resolve("ellie");  성공적으로 호출
-    reject(new Error("no network"));
+    // resolve("ellie");  성공하면 호출
+    reject(new Error("no network")); // 실패하면 호출
   }, 2000);
 });
 
@@ -22,6 +22,7 @@ promise
     console.log(value);
   })
   .catch((error) => {
+    // 실패한 값
     console.log(error);
   })
   .finally(() => {
